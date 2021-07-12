@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<Controller>
+	<pred_H>50</pred_H>
+	<cont_H>10</cont_H>
+	<deltaT>2</deltaT>
+	<Process_Model>
+		<CV name = "CV1">
+			<tf name = "CV1_MV1">
+				<num> 
+					<Value Col="0">1.0</Value>			
+				</num>
+				<den>
+					<Value Col="0">10.0</Value>			
+					<Value Col="1">1.0</Value>			
+				</den>
+			</tf>
+			<tf name = "CV1_MV2">
+				<num> 
+					<Value Col="0">-0.01</Value>			
+				</num>
+				<den>
+					<Value Col="0">1.0</Value>			
+					<Value Col="1">1.0</Value>			
+				</den>
+			</tf>
+			<tf name = "CV1_MV3">
+				<num> 
+					<Value Col="0">-0.3</Value>			
+				</num>
+				<den>
+					<Value Col="0">3.0</Value>			
+					<Value Col="1">1.0</Value>			
+					<Value Col="1">0.3</Value>
+				</den>
+			</tf>
+		</CV>
+		<CV name = "CV2">
+			<tf name = "CV2_MV1">
+				<num> 
+					<Value Col="0">1.0</Value>			
+				</num>
+				<den>
+					<Value Col="0">10.0</Value>			
+					<Value Col="1">1.0</Value>			
+				</den>
+			</tf>
+			<tf name = "CV2_MV2">
+				<num> 
+					<Value Col="0">-1.0</Value>			
+				</num>
+				<den>
+					<Value Col="0">5.0</Value>			
+					<Value Col="1">1.7</Value>		
+					<Value Col="1">1.0</Value>					
+				</den>
+			</tf>
+			<tf name = "CV2_MV3">
+				<num> 
+					<Value Col="0">0.5</Value>			
+				</num>
+				<den>
+					<Value Col="0">13.0</Value>			
+					<Value Col="1">3.1</Value>		
+					<Value Col="1">1.0</Value>					
+				</den>
+			</tf>
+		</CV>
+	</Process_Model>
+	<Disturbance_Model>
+		<CV name = "CV1">
+			<tf name = "CV1_DV1">
+				<num> 
+					<Value Col="0">-0.5</Value>			
+				</num>
+				<den>
+					<Value Col="0">10.0</Value>			
+					<Value Col="1">1.0</Value>			
+				</den>
+			</tf>
+		</CV>
+		<CV name = "CV2">
+			<tf name = "CV2_DV1">
+				<num> 
+					<Value Col="0">0.1</Value>			
+					<Value Col="0">0.3</Value>			
+				</num>
+				<den>
+					<Value Col="0">30.0</Value>			
+					<Value Col="1">20.0</Value>			
+					<Value Col="1">1.0</Value>			
+				</den>
+			</tf>
+		</CV>
+	</Disturbance_Model>
+	<Tuning>
+		<Move_Suppression>
+			<Value Col="0">1.0</Value>			
+			<Value Col="1">1.0</Value>
+			<Value Col="2">1.0</Value>
+		</Move_Suppression>
+		<SP_Tracking>
+			<Value Col="0">100.0</Value>			
+			<Value Col="1">1.0</Value>
+		</SP_Tracking>
+		<CV_Slack>
+			<High>
+				<Value Col="0">100.0</Value>			
+				<Value Col="1">100.0</Value>
+			</High>
+			<Low>
+				<Value Col="0">100.0</Value>			
+				<Value Col="1">100.0</Value>
+			</Low>
+		</CV_Slack>
+		<MV_Limits>
+			<MV_High>
+				<Value Col="0">1.0</Value>			
+				<Value Col="1">1.0</Value>
+				<Value Col="2">1.0</Value>
+			</MV_High>
+			<MV_Low>
+				<Value Col="0">-1.0</Value>			
+				<Value Col="1">-1.0</Value>
+				<Value Col="2">-1.0</Value>
+			</MV_Low>
+		</MV_Limits>
+		<CV_Limits>
+			<CV_High>
+				<Value Col="0">0.5</Value>			
+				<Value Col="1">1.0</Value>
+			</CV_High>
+			<CV_Low>	
+				<Value Col="0">-1.0</Value>			
+				<Value Col="1">-1.0</Value>			
+			</CV_Low>
+		</CV_Limits>
+		<MV_ROC>
+			<ROC_Up>
+				<Value Col="0">1.0</Value>			
+				<Value Col="1">1.0</Value>
+				<Value Col="2">1.0</Value>
+			</ROC_Up>
+			<ROC_Down>
+				<Value Col="0">1.0</Value>			
+				<Value Col="1">1.0</Value>
+				<Value Col="2">1.0</Value>
+			</ROC_Down>
+		</MV_ROC>
+	</Tuning>
+</Controller>

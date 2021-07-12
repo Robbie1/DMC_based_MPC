@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Initial_cond>
+	<SP>
+		<Value Col="0">0.0</Value>			
+		<Value Col="1">0.0</Value>
+	</SP>
+	<PV>
+		<Value Col="0">0.0</Value>			
+		<Value Col="1">0.0</Value>
+	</PV>
+	<MV>
+		<Value Col="0">0.0</Value>			
+		<Value Col="1">0.0</Value>
+		<Value Col="2">0.0</Value>
+	</MV>
+	<DV>
+		<Value Col="0">0.0</Value>			
+	</DV>
+</Initial_cond>
